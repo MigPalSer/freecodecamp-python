@@ -1,6 +1,4 @@
-
 from mpsdate import Mpsdate
-
 
 def add_time(start, duration, *day):
 
@@ -22,4 +20,3 @@ def add_time(start, duration, *day):
     return new_time
 
 print(add_time("11:59 PM", "24:05", "Wednesday"))
-
