@@ -21,7 +21,6 @@ class Mpsdate:
     self.days+=self.hours//24
     self.hours%=24
 
-
   def toString(self, *dayof):
     string=""
     zon=""
@@ -44,15 +43,12 @@ class Mpsdate:
         dayoftheweek=self.ajustdayoftheweek(dayoftheweek)
         string+=", "+self.stringdiario(dayoftheweek)
 
-
     if(self.days==1):
       string+=" (next day)"
     elif(self.days>1):
       string+=" ("+str(self.days)+" days later)"
     return string
   
-
-
   def codigodiario(*stringa):
     stringo=stringa[1]
     stringu=str(stringo[0]).lower()
